@@ -1,0 +1,29 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0px 10px 29px 17px rgba(0, 0, 0, 0.1);
+}
+
+.divide,
+.multiply,
+.minus,
+.plus,
+.equal {
+  @apply p-4 text-[26px] active:bg-white/80 bg-[#ff9f0b] text-center;
+}
+.minusPlus,
+.percentage,
+.clear {
+  @apply p-4 text-[26px] active:bg-white/50 bg-[#433c3a]/30 text-center;
+}
+.num,
+.dot {
+  @apply p-4 text-[26px] active:bg-white/50 bg-[#625c5b]/50 text-center;
+}
